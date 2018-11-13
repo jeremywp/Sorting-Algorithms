@@ -10,10 +10,22 @@ function bubbleSort(arr) {
     }
 }
 
+let myBubbleArray = [2,9,3,7,5,0,1,8];
+let mySortArray = [2,9,3,7,5,0,1,8];
+let myNewArray = [];
 
-let myArray = [2,9,3,7,5,0,1,8];
+function selectionSort(arr) {
+    let length = arr.length;
+    for (let i = 0; i <length; i++) {
+        let min = Math.min.apply(null, arr);
+        let index = arr.indexOf(min);
+        myNewArray.push(arr[index]);
+        arr.splice(index,1);
+    }
+}
 
+bubbleSort(myBubbleArray);
+selectionSort(mySortArray);
 
-bubbleSort(myArray);
-
-console.log(myArray);
+console.log(myBubbleArray);
+console.log(myNewArray);
