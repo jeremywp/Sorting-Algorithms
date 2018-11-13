@@ -11,7 +11,7 @@ function bubbleSort(arr) {
 }
 
 let myBubbleArray = [2,9,3,7,5,0,1,8];
-let mySortArray = [2,9,3,7,5,0,1,8];
+let mySelectArray = [2,9,3,7,5,0,1,8];
 let myNewArray = [];
 
 function selectionSort(arr) {
@@ -25,7 +25,7 @@ function selectionSort(arr) {
 }
 
 bubbleSort(myBubbleArray);
-selectionSort(mySortArray);
+selectionSort(mySelectArray);
 
 console.log(myBubbleArray);
 console.log(myNewArray);
